@@ -22,7 +22,7 @@ $ docker run -it chhuang/filebeat:5.5.1
 When docker container is created. You could paste you log message on console and press ENTER key. It will parse your log message and output on console.
 
 #### Run Example:
-<script type="text/javascript" src="https://asciinema.org/a/Rt6F99fKOUUnLhuF0CHWdln4M.js" id="asciicast-Rt6F99fKOUUnLhuF0CHWdln4M" async></script>
+<script type="text/javascript" src="https://asciinema.org/a/pcRpowA31CN4TgjFVBZiVPMvG.js" id="asciicast-pcRpowA31CN4TgjFVBZiVPMvG" async></script>
 
 
 ### How to use your configuration files?
