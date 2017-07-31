@@ -1,4 +1,4 @@
 filebeat.config_dir: /conf.d
+
 output.console:
   pretty: true
-
