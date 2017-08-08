@@ -16,7 +16,7 @@ RUN set -x && \
     tar xzvf "filebeat-${FILEBEAT_VERSION}-linux-x86_64.tar.gz" && \
     cp "filebeat-${FILEBEAT_VERSION}-linux-x86_64/filebeat" /bin && \
     rm -rf filebeat* && \
-    rm -rf /var/lib/apt/lists/* /opt/* /var/tmp/*
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD [ "filebeat", "-e" ]
