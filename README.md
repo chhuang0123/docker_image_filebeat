@@ -29,7 +29,7 @@ When docker container is created. You could paste you log message on console and
 
 ```
 $ docker run \
-  -v /path/to/config_folder:/conf.d \
+  -it -v /path/to/config_folder:/conf.d \
   chhuang/docker_image_filebeat:latest
 ```
 
