@@ -3,7 +3,8 @@
 [Filebeat](https://www.elastic.co/products/beats/filebeat) is a lightweight shipper for logs. This Docker Filebeat image to provide convenient way to test your log messages from console input (stdin), parse them via json codec and finally display them on console (stdout) as well.
 
 ### Filebeat Version
-* [5.5.1, latest (Dockerfile)](https://github.com/chhuang0123/docker_image_filebeat/blob/master/5.5.1/Dockerfile)
+* [5.5.2, latest (Dockerfile)](https://github.com/chhuang0123/docker_image_filebeat/blob/master/5.5.1/Dockerfile)
+* [5.5.1 (Dockerfile)](https://github.com/chhuang0123/docker_image_filebeat/blob/master/5.5.1/Dockerfile)
 
 ### Features
 * Support console input immediately
@@ -15,7 +16,7 @@
 
 ```
 # interactive mode
-$ docker run -it chhuang/filebeat:5.5.1
+$ docker run -it chhuang/filebeat:latest
 
 ```
 
@@ -29,14 +30,14 @@ When docker container is created. You could paste you log message on console and
 ```
 $ docker run \
   -v /path/to/config_folder:/conf.d \
-  chhuang/filebeat:5.5.1
+  chhuang/filebeat:latest
 ```
 
 Or, you could customize it on your Dockerfile:
 
 ```
 # Dockerfile
-FROM chhuang/filebeat:5.5.1
+FROM chhuang/filebeat:latest
 COPY /path/to/config_folder /conf.d
 
 $ docker build -t namespace/repo .
