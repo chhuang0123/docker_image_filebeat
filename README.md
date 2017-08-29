@@ -16,7 +16,7 @@
 
 ```
 # interactive mode
-$ docker run -it chhuang/filebeat:latest
+$ docker run -it chhuang/docker_image_filebeat:latest
 
 ```
 
@@ -30,14 +30,14 @@ When docker container is created. You could paste you log message on console and
 ```
 $ docker run \
   -v /path/to/config_folder:/conf.d \
-  chhuang/filebeat:latest
+  chhuang/docker_image_filebeat:latest
 ```
 
 Or, you could customize it on your Dockerfile:
 
 ```
 # Dockerfile
-FROM chhuang/filebeat:latest
+FROM chhuang/docker_image_filebeat:latest
 COPY /path/to/config_folder /conf.d
 
 $ docker build -t namespace/repo .
