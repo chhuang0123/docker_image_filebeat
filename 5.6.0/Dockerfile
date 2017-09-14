@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 LABEL maintainer "chhuang@gmail.com"
 
 ENV FILEBEAT_VERSION=5.6.0 \
-    FILEBEAT_SHA1=4191e8864b1d074f6c2a303f22cc2ed0c6361ee5
+    FILEBEAT_SHA1=f612d5673e93d0c4edb4e463765b1c14d3f04664
 
 ADD https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-${FILEBEAT_VERSION}-linux-x86_64.tar.gz /tmp/
 
